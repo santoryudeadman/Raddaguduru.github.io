@@ -1,0 +1,489 @@
+/* Core file */
+
+.is-hidden.js-input-template  { position:relative; }
+.is-hidden.js-input-template a.button { position: absolute; top:0; right:0;}
+.is-hidden.js-input-template input[type="text"] { display: none; }
+.is-hidden.js-input-template .fwp-admin-field-wrap { padding-right:60px; }
+/*#side-sortables*/ div.fastwp_metabox .fwp-desc { display:block; font-size:9px; font-style: italic; clear: both;}
+#side-sortables div.fastwp_metabox input[type="text"],
+#side-sortables div.fastwp_metabox select { width:100%;}
+.fastwp_metabox .hide-default { display:none;}
+.fastwp_metabox .metabox-error { color:#c00; display:block; padding:5px; border:1px solid #c00; background:#ff9; margin:5px 0; font-style: italic;}
+
+.fwp-admin-field-wrap .field-title,
+#poststuff .fwp-admin-field-wrap .field-title { font-size:12px; font-weight: bold; margin:10px 0 0 0; line-height:18px;}
+.fwp-admin-field-wrap .fwp-desc { display:block; font-size:10px; }
+
+.fwp-admin-field-wrap.gallery .gallery-item .tools,
+.fwp-admin-field-wrap.gallery .gallery-item .tools li,
+.fwp-admin-field-wrap .valign-middle { display:inline-block; vertical-align: middle;}
+
+.fwp-admin-field-wrap.gallery .gallery-item { background:#fff; width:200px; border:1px solid #ccc; padding:10px; margin-bottom: 10px; margin-right:10px; display: inline-block; }
+.fwp-admin-field-wrap.gallery .gallery-item .preview { overflow:hidden; width:100%; height:112px; background:#efefef; border:1px solid #cecece; -moz-box-sizing:border-box; -webkit-box-sizing:border-box; box-sizing:border-box; }
+.fwp-admin-field-wrap.gallery .gallery-item .preview img { width:100%; }
+.fwp-admin-field-wrap.gallery .items-wrap { margin:10px -15px 10px 0;}
+
+.fwp-admin-field-wrap .delete-red { font-size:20px; font-weight: bolder; font-family: Arial; color: #e14d43; }
+.fwp-admin-field-wrap a { text-decoration: none; }
+.fwp-admin-field-wrap.gallery .gallery-item input { width:155px;}
+.fwp-hidden { display: none; }
+
+.fwp-admin-field-wrap.switch .switch-options
+{
+  min-height:30px;
+  margin-right:10px;
+}
+
+.fwp-admin-field-wrap.switch .switch-options label
+{
+  cursor:pointer;
+}
+
+.fwp-admin-field-wrap.switch .switch-options input
+{
+  display:none;
+}
+
+.fwp-admin-field-wrap.switch .cb-enable span,.fwp-admin-field-wrap.switch .cb-disable span
+{
+  -webkit-user-select:none;
+  -khtml-user-select:none;
+  -moz-user-select:none;
+  -o-user-select:none;
+  -ms-user-select:none;
+  user-select:none;
+}
+
+.fwp-admin-field-wrap.switch .cb-enable,.fwp-admin-field-wrap.switch .cb-disable,.fwp-admin-field-wrap.switch .cb-enable span,.fwp-admin-field-wrap.switch .cb-disable span
+{
+  display:block;
+  float:left;
+}
+
+.fwp-admin-field-wrap.switch .cb-enable span,.fwp-admin-field-wrap.switch .cb-disable span
+{
+  line-height:30px;
+  display:block;
+  font-weight:700;
+}
+
+.fwp-admin-field-wrap.switch .cb-enable,.fwp-admin-field-wrap.switch .cb-disable
+{
+  padding:0 10px;
+  border-width:1px;
+  border-style:solid;
+  -webkit-appearance:none;
+  white-space:nowrap;
+  -webkit-box-sizing:border-box;
+  -moz-box-sizing:border-box;
+  box-sizing:border-box;
+}
+
+.fwp-admin-field-wrap.switch .cb-enable
+{
+  border-right:0;
+  border-radius:3px 0 0 3px;
+  -moz-border-radius:3px 0 0 3px;
+  -webkit-border-radius:3px 0 0 3px;
+}
+
+.fwp-admin-field-wrap.switch .cb-disable
+{
+  border-left:0;
+  border-radius:0 3px 3px 0;
+  -moz-border-radius:0 3px 3px 0;
+  -webkit-border-radius:0 3px 3px 0;
+}
+
+.fwp-admin-field-wrap.switch .cb-disable.selected
+{
+  color:#fff;
+}
+
+.fwp-admin-field-wrap.switch .cb-enable.selected
+{
+  color:#fff;
+}
+
+
+.admin-color-fresh .fwp-admin-field-wrap.switch .cb-disable,.admin-color-fresh .fwp-admin-field-wrap.switch .cb-enable,.admin-color-fresh .ui-state-default,.admin-color-fresh .ui-widget-content .ui-state-default,.admin-color-fresh .ui-widget-header .ui-state-default
+{
+  background-color:#f5f5f5;
+  background-image:0;
+  background-image:0;
+  background-image:0;
+  background-image:0;
+  background-image:0;
+  background-image:0;
+  background-image:linear-gradient(top,#f8f8f8,#f5f5f5);
+  filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='@from',endColorstr='@to',GradientType=0);
+  border-color:#ccc;
+}
+
+
+.admin-color-fresh .fwp-admin-field-wrap.switch .cb-disable.selected
+{
+  background-color:#646464;
+  background-image:0;
+  background-image:0;
+  background-image:0;
+  background-image:0;
+  background-image:0;
+  background-image:0;
+  background-image:linear-gradient(top,#929292,#646464);
+  filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='@from',endColorstr='@to',GradientType=0);
+  border-color:#767676;
+}
+
+.admin-color-fresh .fwp-admin-field-wrap.switch .cb-enable.selected,.admin-color-fresh .ui-buttonset .ui-state-active
+{
+  background-color:#0074a2;
+  background-image:0;
+  background-image:0;
+  background-image:0;
+  background-image:0;
+  background-image:0;
+  background-image:0;
+  background-image:linear-gradient(top,#008ec6,#0074a2);
+  filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='@from',endColorstr='@to',GradientType=0);
+  border-color:#003d56;
+  border-color:#004f6f;
+  -webkit-box-shadow:inset 0 1px 0 #00abef,0 1px 0 rgba(0,0,0,.15);
+  box-shadow:inset 0 1px 0 #00abef,0 1px 0 rgba(0,0,0,.15);
+}
+
+
+.admin-color-light .fwp-admin-field-wrap.switch .cb-disable,.admin-color-light .fwp-admin-field-wrap.switch .cb-enable,.admin-color-light .ui-state-default,.admin-color-light .ui-widget-content .ui-state-default,.admin-color-light .ui-widget-header .ui-state-default
+{
+  background-color:#f5f5f5;
+  background-image:0;
+  background-image:0;
+  background-image:0;
+  background-image:0;
+  background-image:0;
+  background-image:0;
+  background-image:linear-gradient(top,#f8f8f8,#f5f5f5);
+  filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='@from',endColorstr='@to',GradientType=0);
+  border-color:#ccc;
+}
+
+
+
+.admin-color-light .fwp-admin-field-wrap.switch .cb-disable.selected
+{
+  background-color:#646464;
+  background-image:0;
+  background-image:0;
+  background-image:0;
+  background-image:0;
+  background-image:0;
+  background-image:0;
+  background-image:linear-gradient(top,#929292,#646464);
+  filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='@from',endColorstr='@to',GradientType=0);
+  border-color:#767676;
+}
+
+.admin-color-light .fwp-admin-field-wrap.switch .cb-enable.selected,.admin-color-light .ui-buttonset .ui-state-active
+{
+  background-color:#04a4cc;
+  background-image:0;
+  background-image:0;
+  background-image:0;
+  background-image:0;
+  background-image:0;
+  background-image:0;
+  background-image:linear-gradient(top,#05c0ef,#04a4cc);
+  filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='@from',endColorstr='@to',GradientType=0);
+  border-color:#036881;
+  border-color:#037c9a;
+  -webkit-box-shadow:inset 0 1px 0 #22cffb,0 1px 0 rgba(0,0,0,.15);
+  box-shadow:inset 0 1px 0 #22cffb,0 1px 0 rgba(0,0,0,.15);
+}
+
+.admin-color-blue .fwp-admin-field-wrap.switch .cb-disable,.admin-color-blue .fwp-admin-field-wrap.switch .cb-enable,.admin-color-blue .ui-state-default,.admin-color-blue .ui-widget-content .ui-state-default,.admin-color-blue .ui-widget-header .ui-state-default
+{
+  background-color:#f5f5f5;
+  background-image:0;
+  background-image:0;
+  background-image:0;
+  background-image:0;
+  background-image:0;
+  background-image:0;
+  background-image:linear-gradient(top,#f8f8f8,#f5f5f5);
+  filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='@from',endColorstr='@to',GradientType=0);
+  border-color:#ccc;
+}
+
+
+
+.admin-color-blue .fwp-admin-field-wrap.switch .cb-disable.selected
+{
+  background-color:#646464;
+  background-image:0;
+  background-image:0;
+  background-image:0;
+  background-image:0;
+  background-image:0;
+  background-image:0;
+  background-image:linear-gradient(top,#929292,#646464);
+  filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='@from',endColorstr='@to',GradientType=0);
+  border-color:#767676;
+}
+
+.admin-color-blue .fwp-admin-field-wrap.switch .cb-enable.selected,.admin-color-blue .ui-buttonset .ui-state-active
+{
+  background-color:#4796b3;
+  background-image:0;
+  background-image:0;
+  background-image:0;
+  background-image:0;
+  background-image:0;
+  background-image:0;
+  background-image:linear-gradient(top,#5ea5bf,#4796b3);
+  filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='@from',endColorstr='@to',GradientType=0);
+  border-color:#31687c;
+  border-color:#39778e;
+  -webkit-box-shadow:inset 0 1px 0 #7cb6cb,0 1px 0 rgba(0,0,0,.15);
+  box-shadow:inset 0 1px 0 #7cb6cb,0 1px 0 rgba(0,0,0,.15);
+}
+
+.admin-color-coffee .fwp-admin-field-wrap.switch .cb-disable,.admin-color-coffee .fwp-admin-field-wrap.switch .cb-enable,.admin-color-coffee .ui-state-default,.admin-color-coffee .ui-widget-content .ui-state-default,.admin-color-coffee .ui-widget-header .ui-state-default
+{
+  background-color:#f5f5f5;
+  background-image:0;
+  background-image:0;
+  background-image:0;
+  background-image:0;
+  background-image:0;
+  background-image:0;
+  background-image:linear-gradient(top,#f8f8f8,#f5f5f5);
+  filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='@from',endColorstr='@to',GradientType=0);
+  border-color:#ccc;
+}
+
+
+.admin-color-coffee .fwp-admin-field-wrap.switch .cb-disable.selected
+{
+  background-color:#646464;
+  background-image:0;
+  background-image:0;
+  background-image:0;
+  background-image:0;
+  background-image:0;
+  background-image:0;
+  background-image:linear-gradient(top,#929292,#646464);
+  filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='@from',endColorstr='@to',GradientType=0);
+  border-color:#767676;
+}
+
+.admin-color-coffee .fwp-admin-field-wrap.switch .cb-enable.selected,.admin-color-coffee .ui-buttonset .ui-state-active
+{
+  background-color:#c7a589;
+  background-image:0;
+  background-image:0;
+  background-image:0;
+  background-image:0;
+  background-image:0;
+  background-image:0;
+  background-image:linear-gradient(top,#d2b7a1,#c7a589);
+  filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='@from',endColorstr='@to',GradientType=0);
+  border-color:#ae7d55;
+  border-color:#b78b66;
+  -webkit-box-shadow:inset 0 1px 0 #e0cdbd,0 1px 0 rgba(0,0,0,.15);
+  box-shadow:inset 0 1px 0 #e0cdbd,0 1px 0 rgba(0,0,0,.15);
+}
+
+.admin-color-ectoplasm .fwp-admin-field-wrap.switch .cb-disable,.admin-color-ectoplasm .fwp-admin-field-wrap.switch .cb-enable,.admin-color-ectoplasm .ui-state-default,.admin-color-ectoplasm .ui-widget-content .ui-state-default,.admin-color-ectoplasm .ui-widget-header .ui-state-default
+{
+  background-color:#f5f5f5;
+  background-image:0;
+  background-image:0;
+  background-image:0;
+  background-image:0;
+  background-image:0;
+  background-image:0;
+  background-image:linear-gradient(top,#f8f8f8,#f5f5f5);
+  filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='@from',endColorstr='@to',GradientType=0);
+  border-color:#ccc;
+}
+
+
+.admin-color-ectoplasm .fwp-admin-field-wrap.switch .cb-disable.selected
+{
+  background-color:#646464;
+  background-image:0;
+  background-image:0;
+  background-image:0;
+  background-image:0;
+  background-image:0;
+  background-image:0;
+  background-image:linear-gradient(top,#929292,#646464);
+  filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='@from',endColorstr='@to',GradientType=0);
+  border-color:#767676;
+}
+
+.admin-color-ectoplasm .fwp-admin-field-wrap.switch .cb-enable.selected,.admin-color-ectoplasm .ui-buttonset .ui-state-active
+{
+  background-color:#a3b745;
+  background-image:0;
+  background-image:0;
+  background-image:0;
+  background-image:0;
+  background-image:0;
+  background-image:0;
+  background-image:linear-gradient(top,#b0c25e,#a3b745);
+  filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='@from',endColorstr='@to',GradientType=0);
+  border-color:#727f30;
+  border-color:#829237;
+  -webkit-box-shadow:inset 0 1px 0 #bfcd7b,0 1px 0 rgba(0,0,0,.15);
+  box-shadow:inset 0 1px 0 #bfcd7b,0 1px 0 rgba(0,0,0,.15);
+}
+
+
+.admin-color-midnight .fwp-admin-field-wrap.switch .cb-disable,.admin-color-midnight .fwp-admin-field-wrap.switch .cb-enable,.admin-color-midnight .ui-state-default,.admin-color-midnight .ui-widget-content .ui-state-default,.admin-color-midnight .ui-widget-header .ui-state-default
+{
+  background-color:#f5f5f5;
+  background-image:0;
+  background-image:0;
+  background-image:0;
+  background-image:0;
+  background-image:0;
+  background-image:0;
+  background-image:linear-gradient(top,#f8f8f8,#f5f5f5);
+  filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='@from',endColorstr='@to',GradientType=0);
+  border-color:#ccc;
+}
+
+
+.admin-color-midnight .fwp-admin-field-wrap.switch .cb-disable.selected
+{
+  background-color:#646464;
+  background-image:0;
+  background-image:0;
+  background-image:0;
+  background-image:0;
+  background-image:0;
+  background-image:0;
+  background-image:linear-gradient(top,#929292,#646464);
+  filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='@from',endColorstr='@to',GradientType=0);
+  border-color:#767676;
+}
+
+.admin-color-midnight .fwp-admin-field-wrap.switch .cb-enable.selected,.admin-color-midnight .ui-buttonset .ui-state-active
+{
+  background-color:#e14d43;
+  background-image:0;
+  background-image:0;
+  background-image:0;
+  background-image:0;
+  background-image:0;
+  background-image:0;
+  background-image:linear-gradient(top,#e66a62,#e14d43);
+  filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='@from',endColorstr='@to',GradientType=0);
+  border-color:#ba281e;
+  border-color:#d02c21;
+  -webkit-box-shadow:inset 0 1px 0 #ec8b85,0 1px 0 rgba(0,0,0,.15);
+  box-shadow:inset 0 1px 0 #ec8b85,0 1px 0 rgba(0,0,0,.15);
+}
+
+.admin-color-ocean .fwp-admin-field-wrap.switch .cb-disable,.admin-color-ocean .fwp-admin-field-wrap.switch .cb-enable,.admin-color-ocean .ui-state-default,.admin-color-ocean .ui-widget-content .ui-state-default,.admin-color-ocean .ui-widget-header .ui-state-default
+{
+  background-color:#f5f5f5;
+  background-image:0;
+  background-image:0;
+  background-image:0;
+  background-image:0;
+  background-image:0;
+  background-image:0;
+  background-image:linear-gradient(top,#f8f8f8,#f5f5f5);
+  filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='@from',endColorstr='@to',GradientType=0);
+  border-color:#ccc;
+}
+
+
+.admin-color-ocean .fwp-admin-field-wrap.switch .cb-disable.selected
+{
+  background-color:#646464;
+  background-image:0;
+  background-image:0;
+  background-image:0;
+  background-image:0;
+  background-image:0;
+  background-image:0;
+  background-image:linear-gradient(top,#929292,#646464);
+  filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='@from',endColorstr='@to',GradientType=0);
+  border-color:#767676;
+}
+
+.admin-color-ocean .fwp-admin-field-wrap.switch .cb-enable.selected,.admin-color-ocean .ui-buttonset .ui-state-active
+{
+  background-color:#9ebaa0;
+  background-image:0;
+  background-image:0;
+  background-image:0;
+  background-image:0;
+  background-image:0;
+  background-image:0;
+  background-image:linear-gradient(top,#b3c9b4,#9ebaa0);
+  filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='@from',endColorstr='@to',GradientType=0);
+  border-color:#719a74;
+  border-color:#80a583;
+  -webkit-box-shadow:inset 0 1px 0 #cbdacc,0 1px 0 rgba(0,0,0,.15);
+  box-shadow:inset 0 1px 0 #cbdacc,0 1px 0 rgba(0,0,0,.15);
+}
+
+.admin-color-sunrise .fwp-admin-field-wrap.switch .cb-disable,.admin-color-sunrise .fwp-admin-field-wrap.switch .cb-enable,.admin-color-sunrise .ui-state-default,.admin-color-sunrise .ui-widget-content .ui-state-default,.admin-color-sunrise .ui-widget-header .ui-state-default
+{
+  background-color:#f5f5f5;
+  background-image:0;
+  background-image:0;
+  background-image:0;
+  background-image:0;
+  background-image:0;
+  background-image:0;
+  background-image:linear-gradient(top,#f8f8f8,#f5f5f5);
+  filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='@from',endColorstr='@to',GradientType=0);
+  border-color:#ccc;
+}
+
+.admin-color-sunrise .fwp-admin-field-wrap.switch .cb-disable.selected
+{
+  background-color:#646464;
+  background-image:0;
+  background-image:0;
+  background-image:0;
+  background-image:0;
+  background-image:0;
+  background-image:0;
+  background-image:linear-gradient(top,#929292,#646464);
+  filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='@from',endColorstr='@to',GradientType=0);
+  border-color:#767676;
+}
+
+.admin-color-sunrise .fwp-admin-field-wrap.switch .cb-enable.selected,.admin-color-sunrise .ui-buttonset .ui-state-active
+{
+  background-color:#dd823b;
+  background-image:0;
+  background-image:0;
+  background-image:0;
+  background-image:0;
+  background-image:0;
+  background-image:0;
+  background-image:linear-gradient(top,#e29559,#dd823b);
+  filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='@from',endColorstr='@to',GradientType=0);
+  border-color:#ad5d1e;
+  border-color:#c36922;
+  -webkit-box-shadow:inset 0 1px 0 #e8ac7c,0 1px 0 rgba(0,0,0,.15);
+  box-shadow:inset 0 1px 0 #e8ac7c,0 1px 0 rgba(0,0,0,.15);
+}
+
+
+
+
+
+
+
+
+
+
+

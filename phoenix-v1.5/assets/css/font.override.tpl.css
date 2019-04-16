@@ -1,0 +1,21 @@
+body, p,
+#countdown .countdown-period,
+.fwp-text-with-icon 
+{ font-family: 'Open Sans', sans-serif; }
+
+h1, h2, h3, h4, h5, h6,
+.btn-default,
+.wpcf7-submit,
+.btn,
+.navbar-default .navbar-brand,
+.dropdown-menu > li > a,
+.vc_progress_bar.fastwp .vc_single_bar .vc_label,
+.memberDescription .position span,
+.wpcf7-text,
+.wpcf7-textarea,
+.footerText input,
+.form-control,
+.fastwp.wpb_accordion .wpb_accordion_wrapper .wpb_accordion_header a,
+.dropcap::first-letter,
+.fastwp-filled.wpb_tabs .wpb_tabs_nav>li a 
+{ font-family: 'Montserrat', sans-serif; }

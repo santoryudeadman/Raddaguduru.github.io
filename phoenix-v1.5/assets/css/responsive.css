@@ -1,0 +1,378 @@
+@media (min-width: 1200px){
+
+}
+
+
+/*Notebooks and Small Laptops*/
+@media (min-width: 1025px){
+
+}
+
+/*iPad Landscape Mode and Large Tablets */
+@media (max-width: 1024px){
+
+.parallaxLetter {display:none!important}
+
+}
+
+/*Small Desktop and Very Small Notebook */
+@media (max-width: 992px){
+
+    .widget:first-child{
+        margin-top:100px;
+    }
+
+    .serviceBox h2 span {
+        letter-spacing:5px;
+        font-size:22px;
+    }
+
+    #owl-clients{
+        margin-top:50px;
+    }
+
+    #text-separator-testimonials h3{
+        text-align:center;
+        margin-bottom:50px;
+    }
+
+
+}
+
+/*Medium Tablets */
+@media (max-width: 900px){
+
+    .navbar-nav > li > a {
+        letter-spacing: 1px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+}
+
+
+/*iPad Portrait Mode, iPad Mini and Small Tablets */
+@media (max-width: 768px){
+
+    .serviceBox h2 span {
+        letter-spacing:5px;
+        font-size:18px;
+    }
+
+    .textOverlay{
+        padding-bottom:100px;
+        padding-top:100px;
+        margin-left:0;
+        z-index:6;
+    }
+
+
+    #portfolio .captionWrapper .valign{
+        padding-top:130px;
+    }
+
+    .preloaderLogo{
+        min-width: 100px;
+        max-width: 100px;
+        width: 100px;
+    }
+
+    .ip-header {
+        min-height: 120px;
+    }
+
+    .affix .navbar-collapse {
+        background:transparent;
+    }
+
+    .navbar-fixed-top .navbar-collapse, .navbar-fixed-bottom .navbar-collapse {
+        max-height: 100%;
+    }
+
+    .navbar-nav>li>.dropdown-menu {
+        text-align: center;
+    }
+
+    .memberDescription{
+        text-align: center;
+    }
+
+
+    .memberParagraph{
+        padding-right:0px;
+    }
+
+    .clientsIntro{
+        text-align: center;
+    }
+
+    #text-separator, #text-separator-clients, #text-separator-testimonials, #text-separator-timers {
+        padding-left: 15px;
+    }
+
+    .text-separator-title{
+        text-align: center;
+    }
+
+    .tableWrapper{
+        margin-top:15px;
+        margin-bottom:15px;
+    }
+
+    .gallery .gallery-inner, .gallery .grid-sizer {
+        width: 50%;
+    }
+
+    .gallery .gallery-inner.wide-0, .gallery .gallery-inner.wide-1, .gallery .gallery-inner.wide-2{
+        width:100%;
+    }
+
+    .singleProjectInfo ul {
+        border-left: 0;
+        text-align: center;
+    }
+
+    #text-separator-clients h2,
+    #text-separator-testimonials h2{
+        font-size:20px;
+
+    }
+
+    #team .container{
+        padding-bottom:200px;
+    }
+
+    #countdown .countdown-amount{
+        font-size: 30px;
+    }
+
+    #countdown .countdown-section{
+        border-left:none;
+    }
+
+    .blogPost,
+    .grid-sizer-blog-3{
+        width: 50%;
+    }
+
+
+
+}
+
+/*iPad Portrait Mode, iPad Mini and Small Tablets */
+@media (max-width: 767px) {
+
+    .navbar-default .navbar-collapse {
+        border-color: #e7e7e7;
+        background: rgba(0, 0, 0, 0.9);
+        text-align: center;
+    }
+
+}
+
+/*Medium Smart Phones v2*/
+@media screen and (max-width: 640px){
+    h1 {
+        font-size: 36px;
+        letter-spacing: 10px;
+    }
+
+    h2 {
+        font-size: 24px;
+        text-transform: uppercase;
+        letter-spacing: 8px;
+    }
+
+    .introLogo {
+        width: 80px;
+    }
+
+
+
+    .serviceBox h2 span {
+        padding: 0;
+        border: 0;
+    }
+
+    #singlePageIntro .container {
+        padding: 30px;
+    }
+
+
+    .tableWrapper {
+        padding: 30px;
+        padding-bottom:50px;
+    }
+}
+
+@media screen and (max-width: 600px){
+
+    h1 {
+        font-size: 36px;
+        letter-spacing: 10px;
+    }
+
+    .ServiceWrapperTitle{
+        display:none;
+    }
+
+    .ServiceTitleMobile{
+        display:block;
+        margin-bottom:20px;
+    }
+}
+
+@media screen and (max-width: 600px) and (orientation : landscape){
+
+}
+
+
+@media screen and (max-width: 480px){
+    .bordered-title.hide-border span {
+        padding:0;
+        border:0;
+    }
+    .bordered-title.dyn-border span {
+        border-width:4px;
+        padding:12.5px 25px;
+    }
+
+    .topLine {
+        padding: 20px;
+    }
+
+    section .container {
+        padding-top: 100px;
+        padding-bottom: 100px;
+    }
+
+    h1 {
+        font-size: 24px;
+        letter-spacing: 6px;
+    }
+
+    h2 {
+        font-size: 16px;
+        text-transform: uppercase;
+        letter-spacing: 4px;
+    }
+
+    h4 {
+        font-size: 14px;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+    }
+    .sectionIntro h2 span {
+        padding: 12.5px 25px;
+        border: solid 4px black;
+    }
+
+    .portfolioIntro h2 span {
+        padding: 12.5px 25px;
+        border: solid 4px black;
+    }
+
+    #intro .separator {
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    #intro .separator {
+        width: 100px;
+        max-width: 100px;
+    }
+
+    #intro p {
+        font-size: 12px;
+    }
+
+    .navbar-default {
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+
+    .gallery .gallery-inner, .gallery .grid-sizer {
+        width: 100%;
+    }
+
+    .gallery .gallery-inner.wide-0, .gallery .gallery-inner.wide-1, .gallery .gallery-inner.wide-2{
+        width:100%;
+    }
+
+    .serviceBox {
+        padding: 20px;
+    }
+}
+
+/*google nexus ish*/
+@media screen and (max-width: 480px) {
+
+
+    #text-separator-clients h3 span {
+        padding:0;
+        border:none;
+    }
+
+    .serviceBox {
+        width: 100%;
+    }
+
+    #text-separator-testimonials h3 span {
+        padding:0;
+        border:none;
+    }
+}
+/*Other Major Small Smart Phones*/
+@media screen and (max-width: 360px){
+
+    .blogPost,
+    .grid-sizer-blog-3{
+        width: 100%;
+    }
+
+    .blogPost2,
+    .grid-sizer-blog-2{
+        width: 100%;
+    }
+
+
+    section .container {
+        padding-top: 100px;
+        padding-bottom: 100px;
+    }
+
+    /*.textOverlay {*/
+    /*margin-left: -100px;*/
+    /*}*/
+
+    .tableWrapper {
+        padding: 10px;
+        padding-bottom:30px;
+    }
+
+    .listwrapper{
+        width:100%;
+    }
+}
+
+/*iPhone Portrait Mode and Very Small Mobile Phones*/
+@media screen and (max-width: 320px) {
+
+
+}
+
+
+@media (min-width: 600px){
+    .logged-in.admin-bar nav.navbar { margin-top:46px; }
+}
+@media (min-width: 784px){
+    .logged-in.admin-bar nav.navbar { margin-top:32px; }
+}
+
+
+
+/* Portfolio style */
+
+@media (max-width: 768px){
+    .portfolio-block .valign { margin:25px 5px; top:0; -webkit-transform: translateY(0);-ms-transform: translateY(0);transform: translateY(0); }
+    .portfolio-block { text-align: center; }
+    .portfolio-block .container { padding-top:100px; padding-bottom:100px; }
+}

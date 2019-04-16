@@ -1,0 +1,52 @@
+/* Visual composer backend */
+.wpb_title-with-icon  .wpb_element_wrapper .wpb_vc_param_value ,
+.wpb_title-with-border .wpb_element_wrapper .wpb_vc_param_value,
+.wpb_our-services .wpb_element_wrapper .wpb_vc_param_value,
+.wpb_fwp-price-table .wpb_element_wrapper .wpb_vc_param_value,
+.wpb_our-clients .wpb_element_wrapper .wpb_vc_param_value 
+
+{ display:block; max-height:1px; overfow:hidden; visibility: hidden; }
+
+.w20_fastwp_vc{
+    width: 20%;
+    max-width:20%;
+}
+
+.w25_fastwp_vc{
+    width: 25%;
+    max-width:25%;
+}
+
+.w33_fastwp_vc{
+    width: 33.33%;
+    max-width:33.33%;
+}
+
+.w50_fastwp_vc{
+    width: 50%;
+    max-width:50%;
+}
+
+.w66_fastwp_vc{
+    width: 66.67%;
+    max-width:66.67%;
+}
+
+.w75_fastwp_vc{
+    width: 75%;
+    max-width:75%;
+}
+
+.w20_fastwp_vc, .w25_fastwp_vc, .w33_fastwp_vc, .w50_fastwp_vc, .w66_fastwp_vc, .w75_fastwp_vc {
+    padding: 15px;
+    box-sizing: border-box;
+}
+
+/* menu item clearfix */
+.menu-item-settings::after {clear:both; display:table; content: " "}
+
+/* Fix conflict between redux icon large and icomoon */
+
+.icon-large {
+    font-family: "Elusive-Icons"!important;
+}
